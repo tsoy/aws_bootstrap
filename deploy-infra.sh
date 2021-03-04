@@ -7,7 +7,7 @@ CLI_PROFILE=aws-bootstrap
 EC2_INSTANCE_TYPE=t2.micro
 
 # Deploy the CloudFormation template
-echo -e "\n\n======== Deploying main.yml ==========="
+echo -e "\n\n=========== Deploying main.yml ==========="
 aws cloudformation deploy \
   --region $REGION \
   --profile $CLI_PROFILE \
