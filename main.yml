@@ -24,7 +24,7 @@ Resources:
         - Key: Name
           Value: !Ref AWS::StackName
   InstanceRole:
-    Type: "AWS::IAM::Role"
+    Type: AWS::IAM::Role
     Properties:
       AssumeRolePolicyDocument:
         Version: "2012-10-17"
@@ -40,7 +40,7 @@ Resources:
         - Key: Name
           Value: !Ref AWS::StackName
   InstanceProfile:
-    Type: "AWS::IAM::InstanceProfile"
+    Type: AWS::IAM::InstanceProfile
     Properties:
       Roles:
         - Ref: InstanceRole
